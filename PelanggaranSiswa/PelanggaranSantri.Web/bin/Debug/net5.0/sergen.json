@@ -1,0 +1,69 @@
+{
+  "RootNamespace": "PelanggaranSantri",
+  "ServerTypings": {
+    "LocalTexts": true
+  },
+  "Restore": {
+    "Exclude": [
+      "/wwwroot/Scripts/serenity/Serenity.CoreLib*.*"
+    ]
+  },
+  "Connections": [
+    {
+      "Key": "Default",
+      "Tables": [
+        {
+          "Tablename": "Genre",
+          "Identifier": "Genre",
+          "Module": "MovieDB",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "Movie",
+          "Identifier": "Movie",
+          "Module": "MovieDB",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "MovieCast",
+          "Identifier": "MovieCast",
+          "Module": "MovieDB",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "MovieGenres",
+          "Identifier": "MovieGenres",
+          "Module": "MovieDB",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "Person",
+          "Identifier": "Person",
+          "Module": "MovieDB",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    },
+    {
+      "Key": "MasterData",
+      "Tables": [
+        {
+          "Tablename": "Pelanggaran",
+          "Identifier": "Pelanggaran",
+          "Module": "MasterData",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "Siswa",
+          "Identifier": "Siswa",
+          "Module": "MasterData",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    }
+  ],
+  "UpgradeInfo": {
+    "InitialType": "Community",
+    "InitialVersion": "5.2.4.0"
+  }
+}
